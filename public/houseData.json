@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/image1.jpg",
+      "title": "Cozy Apartment in Downtown",
+      "description": "A beautiful apartment located in the heart of the city. Close to amenities and public transport.",
+      "price": 1500,
+      "location": "Downtown, City A"
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/image2.jpg",
+      "title": "Spacious Family Home",
+      "description": "A spacious home perfect for families, with a large backyard and close proximity to schools.",
+      "price": 2500,
+      "location": "Suburb, City B"
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/image3.jpg",
+      "title": "Luxury Condo with Ocean View",
+      "description": "Experience luxury living with stunning ocean views from this modern condo.",
+      "price": 3500,
+      "location": "Beachfront, City C"
+    },
+    {
+        "id": 4,
+        "image": "https://example.com/image4.jpg",
+        "title": "Charming Cottage in the Countryside",
+        "description": "Escape the hustle and bustle with this cozy cottage surrounded by nature.",
+        "price": 1200,
+        "location": "Rural Area, City D"
+      },
+      {
+        "id": 5,
+        "image": "https://example.com/image5.jpg",
+        "title": "Modern Townhouse with Rooftop Terrace",
+        "description": "Enjoy urban living with this stylish townhouse featuring a rooftop terrace and city views.",
+        "price": 2800,
+        "location": "Downtown, City E"
+      },
+      {
+        "id": 6,
+        "image": "https://example.com/image6.jpg",
+        "title": "Elegant Penthouse in Exclusive Building",
+        "description": "Live in luxury with this elegant penthouse offering spacious interiors and top-notch amenities.",
+        "price": 5000,
+        "location": "High-Rise, City F"
+      }
+  ]
+  
