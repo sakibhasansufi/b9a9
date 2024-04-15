@@ -1,4 +1,4 @@
-
+import { FaArrowRight } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -13,6 +13,7 @@ const Footer = () => {
                         <label className="absolute -top-2 left-0 bg-transparent text-xs text-black duration-300 peer-placeholder-shown:left-0 peer-placeholder-shown:top-[50%] peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-2 peer-focus:-translate-y-0 peer-focus:text-xs peer-focus:text-black" htmlFor="navigate_ui_input_44">
                             Email
                         </label>
+                        <button className="btn btn-primary"><FaArrowRight /></button>
                     </div>
 
                 </form>
@@ -47,7 +48,7 @@ const Footer = () => {
 
             </div>
             <aside className="bg-sky-100 py-5 text-center text-sm">
-                <p>&copy; 2024 NavigateUI. All Rights Reserved.</p>
+                <p>&copy; 2024 Alps Home. All Rights Reserved.</p>
             </aside>
         </footer>
 
