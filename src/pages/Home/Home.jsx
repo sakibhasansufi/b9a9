@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import Card from "../../Card/Card";
 import Agents from "../Agents/Agents";
 import Partners from "../Partners/Partners";
+import ClientFeedback from "../ClientFeedback/ClientFeedback";
 
 const Home = () => {
     const houseData = useLoaderData();
@@ -71,6 +72,13 @@ const Home = () => {
             <section className="mt-8 ">
             <h2 className="font-poppins text-3xl font-bold text-center mt-16 mb-6">Our Partners</h2>
                 <Partners></Partners>
+            </section>
+
+
+            {/* Client feedback section added */}
+            <section className="mt-8">
+            <h2 className="font-poppins text-3xl font-bold text-center mt-16 mb-6">What Our Client Says</h2>
+                    <ClientFeedback></ClientFeedback>
             </section>
 
 

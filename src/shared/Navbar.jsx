@@ -6,7 +6,7 @@ import { AuthContext } from "../providers/Provider";
 
 const Navbar = () => {
 
-    const {logout} = useContext(AuthContext);
+    const { logout } = useContext(AuthContext);
 
     return (
 
@@ -19,8 +19,11 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                         <li><NavLink to='/'>Home</NavLink></li>
                         <li><NavLink to='/career'>Career</NavLink></li>
+                        <li><NavLink to='/events'>Events</NavLink></li>
+                        <li><NavLink to='/contact'>Contact us</NavLink></li>
                         <Link to='/login' className="btn btn-info">Login</Link>
                         <Link to='/signup' className="btn btn-accent">Sign up</Link>
+
                     </ul>
                 </div>
                 <img src={logo} className="w-10 h-10" alt="" />
@@ -31,11 +34,13 @@ const Navbar = () => {
 
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/career'>Career</NavLink></li>
+                    <li><NavLink to='/events'>Events</NavLink></li>
+                    <li><NavLink to='/contact'>Contact us</NavLink></li>
                 </ul>
             </div>
             <div className="flex gap-2">
                 <div className="hidden  lg:contents   navbar-end ">
-                    <Link to='/login' className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Login</Link>
+                    <Link to='/login' className="rounded-lg bg-green-500 px-6 py-2 text-[12px] font-semibold text-white duration-300 dark:hover:bg-green-950 sm:text-sm md:text-base ">Login</Link>
                     <Link to='/signup' className="rounded-md border border-black px-2 w-[72px] dark:border-white dark:hover:text-indigo-600 dark:hover:bg-indigo-600  py-2  duration-300 hover:bg-gray-200">Sign up</Link>
 
                 </div>

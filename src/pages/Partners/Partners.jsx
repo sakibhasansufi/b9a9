@@ -9,7 +9,7 @@ import seven from '../../assets/7.png'
 const Partners = () => {
     return (
         <div>
-            <Marquee >
+            <Marquee speed={'40'} gradient='true'>
                 <img src={one}  className="h-56" alt="" />
                 <img src={two} className="h-56" alt="" />
                 <img src={three} className="h-56" alt="" />
