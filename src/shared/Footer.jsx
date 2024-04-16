@@ -35,7 +35,7 @@ const Footer = () => {
                     <nav className="text-lg">
                         <ul className="space-y-3">
                             <li>
-                                <a className="cursor-pointer hover:underline">Services</a>
+                                <Link to='/career' className="cursor-pointer hover:underline">Career</Link>
                             </li>
                             <li>
                                 <a className="cursor-pointer hover:underline">Add</a>

@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 
 const Card = ({ housedata }) => {
-    const { id, image, title, price, description,location } = housedata;
+    const { image, title, price, description,location } = housedata;
 
     return (
         <div>
@@ -14,7 +14,7 @@ const Card = ({ housedata }) => {
                     <h1 className="text-lg font-semibold ">{title}</h1>
                     <p className="text-sm text-gray-500 dark:text-white/60">{description}</p>
                     <div className='flex justify-between'>
-                        <div className="text-lg font-semibold">${price}</div>
+                        <div className="text-[#FF5400] text-lg font-bold font-mulish">${price}</div>
                         <div className='flex items-center gap-3 font-poppins'><FaMapMarkerAlt /> {location}</div>
                     </div>
 

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "job_title": "Real Estate Agent",
+        "job_description": "Responsible for helping clients buy, sell, or rent properties. Must have excellent communication and negotiation skills.",
+        "job_status": "On-site",
+        "vacancy": "8"
+    },
+    {
+        "id": 2,
+        "job_title": "Property Manager",
+        "job_description": "Oversees the daily operations of rental properties. Handles tenant relations, property maintenance, and lease agreements.",
+        "job_status": "On-site",
+        "vacancy": "2"
+    },
+    {
+        "id": 3,
+        "job_title": "Digital Marketing Intern",
+        "job_description": "Develops and implements marketing strategies to promote real estate listings. Creates digital and print marketing materials.",
+        "job_status": "Remote",
+        "vacancy": "5"
+    },
+    {
+        "id": 4,
+        "job_title": "Maintenance Technician",
+        "job_description": "Performs routine maintenance and repairs on residential properties. Ensures that properties are well-maintained and in good condition.",
+        "job_status": "On-site",
+        "vacancy": "12"
+    },
+    {
+        "id": 5,
+        "job_title": "Administrative Assistant",
+        "job_description": "Provides administrative support to real estate agents and property managers. Handles phone calls, schedules appointments, and maintains records.",
+        "job_status": "On-site",
+        "vacancy": "1"
+    },
+    {
+        "id": 6,
+        "job_title": "Database Administrator",
+        "job_description": "As a Database Administrator (DBA), you will be responsible for the performance, integrity, and security of a database. You will ensure that the database remains operational, accessible, and efficient for the organization's users. This role involves designing, implementing, and maintaining database systems, as well as troubleshooting any issues that arise.",
+        "job_status": "Remote",
+        "vacancy": "1"
+    }
+]

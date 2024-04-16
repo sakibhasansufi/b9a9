@@ -2,10 +2,11 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Card from "../../Card/Card";
+import Agents from "../Agents/Agents";
+import Partners from "../Partners/Partners";
 
 const Home = () => {
     const houseData = useLoaderData();
-    console.log(houseData)
     const [currentSlider, setCurrentSlider] = useState(0);
     const sliders = [{ img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "House 1", des: "White and brown concrete building." }, { img: "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=1781&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "House 2", des: "Brown and white wooden house near green trees." }, { img: "https://images.unsplash.com/photo-1600585153490-76fb20a32601?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "House 3", des: "Lighted house besides tree." }, { img: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "House 4", des: "Black and white concrete building." }, { img: "https://images.unsplash.com/photo-1613553507747-5f8d62ad5904?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "House 5", des: "White and brown concrete building." },];
     const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? sliders.length - 1 : currentSlider - 1);
@@ -45,6 +46,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* card section */}
             <div >
                 <h2 className="font-poppins text-3xl font-bold text-center mt-16 mb-6">Properties for sale and rent</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-10 mb-8'>
@@ -54,6 +56,22 @@ const Home = () => {
 
                 </div>
             </div>
+
+            {/* Agents section */}
+
+            <section className="mt-8">
+                <h2 className="font-poppins text-3xl font-bold text-center mt-16 mb-6">Meet our agents</h2>
+                    <Agents></Agents>
+                
+
+            </section>
+
+            {/* Partners section */}
+
+            <section className="mt-8 ">
+            <h2 className="font-poppins text-3xl font-bold text-center mt-16 mb-6">Our Partners</h2>
+                <Partners></Partners>
+            </section>
 
 
         </div>
