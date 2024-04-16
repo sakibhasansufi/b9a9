@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "https://example.com/image1.jpg",
+      "image": "https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
       "title": "Cozy Apartment in Downtown",
       "description": "A beautiful apartment located in the heart of the city. Close to amenities and public transport.",
       "price": 1500,
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "image": "https://example.com/image2.jpg",
+      "image": "https://static.wixstatic.com/media/a72a50_ebc0ba942f6d4f3ea845e63102727043~mv2.jpg/v1/fill/w_750,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2.jpg",
       "title": "Spacious Family Home",
       "description": "A spacious home perfect for families, with a large backyard and close proximity to schools.",
       "price": 2500,
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "image": "https://example.com/image3.jpg",
+      "image": "https://static.wixstatic.com/media/a72a50_b264332cc1514fa6a58201de27ec4ad6~mv2.jpg/v1/fill/w_735,h_490,al_c,q_85,enc_auto/3.jpg",
       "title": "Luxury Condo with Ocean View",
       "description": "Experience luxury living with stunning ocean views from this modern condo.",
       "price": 3500,
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "image": "https://example.com/image4.jpg",
+        "image": "https://static.wixstatic.com/media/a72a50_38e1d24cd3454e85b17dd7aa1e72db41~mv2.jpg/v1/fill/w_750,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4.jpg",
         "title": "Charming Cottage in the Countryside",
         "description": "Escape the hustle and bustle with this cozy cottage surrounded by nature.",
         "price": 1200,
@@ -33,7 +33,7 @@
       },
       {
         "id": 5,
-        "image": "https://example.com/image5.jpg",
+        "image": "https://static.wixstatic.com/media/a72a50_3a401ca185ef48e482e2215e1cd1a9c4~mv2.jpg/v1/fill/w_736,h_489,al_c,q_80,enc_auto/5.jpg",
         "title": "Modern Townhouse with Rooftop Terrace",
         "description": "Enjoy urban living with this stylish townhouse featuring a rooftop terrace and city views.",
         "price": 2800,
@@ -41,7 +41,7 @@
       },
       {
         "id": 6,
-        "image": "https://example.com/image6.jpg",
+        "image": "https://static.wixstatic.com/media/a72a50_16fba4dfb7414674a282d79cb44eac04~mv2.jpg/v1/fill/w_720,h_431,al_c,lg_1,q_80,enc_auto/6.jpg",
         "title": "Elegant Penthouse in Exclusive Building",
         "description": "Live in luxury with this elegant penthouse offering spacious interiors and top-notch amenities.",
         "price": 5000,

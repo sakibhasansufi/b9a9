@@ -1,83 +1,36 @@
+import PropTypes from 'prop-types';
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 
-const Card = () => {
+const Card = ({ housedata }) => {
+    const { id, image, title, price, description,location } = housedata;
+
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 space-y-6'>
-            <div className="mx-auto  max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
+        <div>
+
+            <div className="mx-auto max-w-[350px] h-[470px] font-mulish space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
+                <img className="h-[200px] w-[350px] rounded-lg object-cover" src={image} />
                 <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
+                    <h1 className="text-lg font-semibold ">{title}</h1>
+                    <p className="text-sm text-gray-500 dark:text-white/60">{description}</p>
+                    <div className='flex justify-between'>
+                        <div className="text-lg font-semibold">${price}</div>
+                        <div className='flex items-center gap-3 font-poppins'><FaMapMarkerAlt /> {location}</div>
+                    </div>
+
                 </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
-                </div>
-            </div>
-            <div className="mx-auto max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
-                <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
-                </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
-                </div>
-            </div>
-            <div className="mx-auto max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
-                <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
-                </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
-                </div>
-            </div>
-            <div className="mx-auto max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
-                <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
-                </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
-                </div>
-            </div>
-            <div className="mx-auto max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
-                <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
-                </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
-                </div>
-            </div>
-            <div className="mx-auto max-w-[350px] space-y-4 rounded-lg bg-white p-6 shadow-lg md:w-[350px] dark:bg-[#18181B]">
-                <image width={200} height={200} className="h-[275px] w-[350px] rounded-lg object-cover" src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
-                <div className="grid gap-2">
-                    <h1 className="text-lg font-semibold ">Product Name</h1>
-                    <p className="text-sm text-gray-500 dark:text-white/60">This is a brief description of the product. It highlights the key features and benefits.</p>
-                    <div className="text-lg font-semibold">$99.99</div>
-                </div>
-                <div className="flex gap-4">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Add to Cart</button>
-                    <button className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">View Details</button>
+                <div className="flex justify-center">
+                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">View Details</button>
+
                 </div>
             </div>
         </div>
 
     );
 };
+
+Card.propTypes = {
+    housedata: PropTypes.array
+}
 
 export default Card;

@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
                     <nav className="text-lg ">
                         <ul className="space-y-3">
                             <li>
-                                <a className="cursor-pointer hover:underline">Home</a>
+                                <Link to='/' className="cursor-pointer hover:underline">Home</Link>
                             </li>
                             <li>
                                 <a className="cursor-pointer hover:underline">Contact</a>

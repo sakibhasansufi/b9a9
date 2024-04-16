@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
 
-        <div className="navbar md:max-w-7xl md:mx-auto mt-5 bg-base-100 sticky shadow-white top-0 right-0 left-0">
+        <div className="navbar md:max-w-7xl md:mx-auto mt-5 bg-base-100 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,11 +35,11 @@ const Navbar = () => {
             </div>
             <div className="flex gap-2">
                 <div className="hidden  lg:contents   navbar-end ">
-                    <Link to='/login' className="btn btn-info mr-10">Login</Link>
-                    <Link to='/signup' className="btn btn-accent">Sign up</Link>
+                    <Link to='/login' className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Login</Link>
+                    <Link to='/signup' className="rounded-md border border-black px-2 w-[72px] dark:border-white dark:hover:text-indigo-600 dark:hover:bg-indigo-600  py-2  duration-300 hover:bg-gray-200">Sign up</Link>
 
                 </div>
-                <div className="dropdown dropdown-end ml-20 lg:ml-0 ">
+                <div className="dropdown dropdown-end ml-20 md:ml-56 lg:ml-0 ">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />

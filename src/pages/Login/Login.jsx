@@ -32,7 +32,7 @@ const Login = () => {
 
     return (
         <div className="w-full max-w-md p-8 space-y-3 mt-20 rounded-xl border bg-white   font-sans mx-auto">
-            <h1 className="text-3xl font-bold text-center text-indigo-600">Login</h1>
+            <h1 className="text-3xl font-bold text-center text-slate-800">Login</h1>
             {/* Input fields and the form started */}
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="space-y-2 text-sm">
@@ -55,7 +55,7 @@ const Login = () => {
                     </div>
                 </div>
                 {/* Sign in Button */}
-                <button className="text-lg rounded-xl relative p-[10px] block w-full bg-indigo-600 text-white border-y-4 duration-500 overflow-hidden ">
+                <button className="text-lg rounded-xl relative p-[10px] block w-full bg-slate-800 text-white border-y-4 duration-500 overflow-hidden ">
                     Log In
                     <span className="bg-indigo-800 absolute inset-0 -translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
                     <span className="bg-indigo-800 absolute inset-0 translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
