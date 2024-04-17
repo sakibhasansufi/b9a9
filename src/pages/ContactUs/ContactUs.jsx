@@ -5,25 +5,15 @@ const ContactUs = () => {
     const markers = [
         {
             id: 1,
-            geocode: [48.86, 2.3522],
+            geocode: [40.7125771,  -74.0054386],
             popup: "Hello i am pop up 1"
-        },
-        {
-            id: 2,
-            geocode: [48.85, 2.3522],
-            popup: "Hello i am pop up 2"
-        },
-        {
-            id: 3,
-            geocode: [48.855, 2.34],
-            popup: "Hello i am pop up 2"
-        },
+        }
 
     ];
 
     return (
-        <div className='h-full'>
-            <MapContainer center={[48.8566, 2.3522]} zoom={13}  scrollWheelZoom={true}>
+        <div className='md:max-w-7xl md:mx-auto md:ml-16 mt-8 mb-8'>
+            <MapContainer center={[40.7125771,  -74.0054386]} zoom={13}  scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
