@@ -1,4 +1,4 @@
-import { FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 
@@ -8,38 +8,53 @@ const githubProvider = new GithubAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 const Provider = ({ children }) => {
     const [user, setUser] = useState(null);
-    const [loading,setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     // console.log(user);
 
     // create user
     const createUser = (email, password) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password);
+        return createUserWithEmailAndPassword(auth, email, password)
+        
+
+    }
+
+
+
+    //update user
+    const updateUserProfile = (name,image) => {
+       return updateProfile(auth.currentUser, {
+            displayName: name, 
+            photoURL: image
+        })
     }
 
     // sign in user
-    const signInUser = (email,password) => {
+    const signInUser = (email, password) => {
         setLoading(true);
-        return signInWithEmailAndPassword(auth,email,password);
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     // google log in 
     const googleLogIn = () => {
         setLoading(true);
-        return signInWithPopup(auth,googleProvider)
-        .then(result => {
-            const loggedinuser = result.user;
-            console.log(loggedinuser);
-            setUser(loggedinuser)
-        })
-        .catch(error => {
-            console.error(error.message)
+        return signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const loggedinuser = result.user;
+                console.log(loggedinuser);
+                setUser(loggedinuser)
+            })
+            .catch(error => {
+                console.error(error.message)
 
-        })
+            })
     }
 
+
+
+
     // logout
-    const logout = () =>{
+    const logout = () => {
         setLoading(true)
         signOut(auth);
         setUser(null)
@@ -48,33 +63,33 @@ const Provider = ({ children }) => {
     // github log in 
     const githubLogIn = () => {
         setLoading(true);
-        return signInWithPopup(auth,githubProvider)
-        .then(result => {
-            const loggedinuser = result.user;
-            console.log(loggedinuser);
-            setUser(loggedinuser)
-        })
-        .catch(error => {
-            console.error(error.message)
+        return signInWithPopup(auth, githubProvider)
+            .then(result => {
+                const loggedinuser = result.user;
+                console.log(loggedinuser);
+                setUser(loggedinuser)
+            })
+            .catch(error => {
+                console.error(error.message)
 
-        })
-        
+            })
+
     }
 
 
     // facebook log in 
     const facebookLogIn = () => {
-        return signInWithPopup(auth,facebookProvider)
+        return signInWithPopup(auth, facebookProvider)
     }
 
     // observer
     useEffect(() => {
-       const unSubscribe= onAuthStateChanged(auth, (user) => {
-                setUser(user);
-                setLoading(false);
+        const unSubscribe = onAuthStateChanged(auth, (user) => {
+            setUser(user);
+            setLoading(false);
         });
-        return ()=>{
-            unSubscribe() ;
+        return () => {
+            unSubscribe();
         }
     }, [])
 
@@ -85,9 +100,11 @@ const Provider = ({ children }) => {
         githubLogIn,
         facebookLogIn,
         logout,
+        updateUserProfile,
         loading,
-        user
+        user,
         
+
     }
     return (
         <AuthContext.Provider value={allValues}>
