@@ -25,7 +25,7 @@ const Footer = () => {
                                 <Link to='/' className="cursor-pointer hover:underline">Home</Link>
                             </li>
                             <li>
-                                <a className="cursor-pointer hover:underline">Contact</a>
+                                <Link to='/contact' className="cursor-pointer hover:underline">Contact</Link>
                             </li>
                             <li>
                                 <a className="cursor-pointer hover:underline">About</a>

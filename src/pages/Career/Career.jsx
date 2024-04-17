@@ -1,11 +1,15 @@
 import { Link, useLoaderData } from "react-router-dom";
 import { HiOutlineBriefcase } from "react-icons/hi";
+import { Helmet } from "react-helmet-async";
 
 const Career = () => {
     const jobData = useLoaderData();
     console.log(jobData)
     return (
         <div>
+            <Helmet>
+                <title>Alps Home | Career</title>
+            </Helmet>
             <h3 className="text-center text-green-500 mb-5 font-extrabold font-poppins text-2xl mt-4">Available Jobs</h3>
             {
                 jobData.map(job => <div key={jobData.id} className="md:max-w-7xl md:mx-auto mb-5 ">

@@ -5,6 +5,7 @@ import Card from "../../Card/Card";
 import Agents from "../Agents/Agents";
 import Partners from "../Partners/Partners";
 import ClientFeedback from "../ClientFeedback/ClientFeedback";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const houseData = useLoaderData();
@@ -15,6 +16,10 @@ const Home = () => {
     const isSmallScreen = window.innerWidth <= 768;
     return (
         <div>
+            <Helmet>
+                <title>Alps Home | Home
+                </title>
+            </Helmet>
             <div className="w-full  h-60 sm:h-96 md:h-[650px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear  overflow-hidden"
                 style={{ backgroundImage: `url(${currentSlider === 0 ? sliders[sliders.length - 1].img : sliders[currentSlider - 1].img})` }}>
                 {/* arrow */}

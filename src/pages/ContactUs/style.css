@@ -1,4 +1,13 @@
-.leaflet-container{
-    height: 80vh;
-    width: 500px;
+.leaflet-container {
+    height: 70vh;
+    width: 600px;
+}
+
+@media screen and (max-width : 576px) {
+    .leaflet-container {
+        margin-left: 10px;
+        height: 80vh;
+        width: 300px;
+    }
+
 }

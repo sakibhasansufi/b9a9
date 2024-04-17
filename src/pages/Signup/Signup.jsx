@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/Provider";
+import { Helmet } from "react-helmet-async";
 
 
 const Signup = () => {
@@ -31,6 +32,9 @@ const Signup = () => {
 
     return (
         <div className="w-full max-w-md p-8 space-y-3 mt-20 rounded-xl border bg-white   font-sans mx-auto">
+            <Helmet>
+                <title>Alps Home | Sign up</title>
+            </Helmet>
             <h1 className="text-3xl font-bold text-center text-indigo-600">Sign up</h1>
             {/* Input fields and the form started */}
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 ">

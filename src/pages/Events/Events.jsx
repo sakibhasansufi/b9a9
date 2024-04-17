@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 
 const Events = () => {
     return (
         <div className=" flex justify-center ">
+            <Helmet>
+                <title>Alps Home | Events</title>
+            </Helmet>
             <div className=" mx-auto my-20  justify-center space-y-20">
                 <div className="flex">
                     <div className="group relative  sm:w-[445px]">
