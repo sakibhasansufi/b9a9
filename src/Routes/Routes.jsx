@@ -8,6 +8,8 @@ import Signup from "../pages/Signup/Signup";
 import Career from "../pages/Career/Career";
 import Events from "../pages/Events/Events";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import HouseDetails from "../pages/HouseDetails/HouseDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const routes= createBrowserRouter([
     {
@@ -19,6 +21,10 @@ const routes= createBrowserRouter([
                 path : '/',
                 element : <Home></Home>,
                 loader : () => fetch('/public/houseData.json')
+            },
+            {
+                path : '/housedata/:id',
+                element : <PrivateRoute><HouseDetails></HouseDetails></PrivateRoute>
             },
             {
                 path : '/login',

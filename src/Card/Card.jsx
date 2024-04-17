@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Card = ({ housedata }) => {
-    const { image, title, price, description,location } = housedata;
+    const { id,image, title, price, description,location } = housedata;
 
     return (
         <div>
@@ -20,7 +21,7 @@ const Card = ({ housedata }) => {
 
                 </div>
                 <div className="flex justify-center">
-                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">View Details</button>
+                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base "><Link to={`/housedata/${id}`}>View Details</Link> </button>
 
                 </div>
             </div>

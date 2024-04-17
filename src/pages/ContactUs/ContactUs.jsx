@@ -18,7 +18,7 @@ const ContactUs = () => {
                 <title> Alps Home |Contact us</title>
             </Helmet>
             <h2 className='text-center text-3xl font-bold mt-5 font-mulish'>Our Location and Contact Information</h2>
-            <div className=' md:flex justify-center md:gap-10 lg:gap-20  md:ml-16 mt-8 mb-8'>
+            <div className=' md:flex justify-center  md:gap-10 lg:gap-20  md:ml-16 mt-8 mb-8 '>
                 <MapContainer center={[40.7125771, -74.0054386]} zoom={13} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
