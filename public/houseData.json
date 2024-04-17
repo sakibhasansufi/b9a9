@@ -5,7 +5,8 @@
       "title": "Cozy Apartment in Downtown",
       "description": "A beautiful apartment located in the heart of the city. Close to amenities and public transport.",
       "price": 1500,
-      "location": "Downtown, City A"
+      "location": "Downtown, City A",
+      "big" : "This sleek and stylish urban loft offers modern living at its finest. With floor-to-ceiling windows, exposed concrete walls, and high ceilings, the space is flooded with natural light and exudes an industrial-chic vibe. The open-concept layout seamlessly connects the living, dining, and kitchen areas, perfect for entertaining guests. The gourmet kitchen features state-of-the-art appliances, sleek cabinetry, and a large center island. Upstairs, the spacious bedroom boasts a luxurious ensuite bathroom and ample closet space. Located in the heart of the city, this loft is within walking distance to trendy cafes, restaurants, and cultural attractions."
     },
     {
       "id": 2,
@@ -13,7 +14,9 @@
       "title": "Spacious Family Home",
       "description": "A spacious home perfect for families, with a large backyard and close proximity to schools.",
       "price": 2500,
-      "location": "Suburb, City B"
+      "location": "Suburb, City B",
+      "big" : "Nestled along the coastline, this minimalist retreat offers serene living with panoramic ocean views. Designed with clean lines and neutral tones, the home embodies a sense of tranquility and sophistication. Expansive windows frame breathtaking vistas of the sea, while the open floor plan maximizes natural light and airflow. "
+
     },
     {
       "id": 3,
@@ -21,7 +24,8 @@
       "title": "Luxury Condo with Ocean View",
       "description": "Experience luxury living with stunning ocean views from this modern condo.",
       "price": 3500,
-      "location": "Beachfront, City C"
+      "location": "Beachfront, City C",
+      "big" : "Perched atop a hillside, this luxurious mansion offers unparalleled elegance and breathtaking views of the surrounding landscape. Grand in scale and opulent in design, the home boasts impressive architectural details and lavish amenities. The expansive living spaces feature soaring ceilings, marble floors, and custom millwork throughout. The gourmet kitchen is a chef's delight, equipped with top-of-the-line appliances, a butler's pantry, and a breakfast nook overlooking the manicured gardens. The sumptuous master suite occupies an entire wing of the home and includes a private sitting area, dual bathrooms, and separate dressing rooms. Additional highlights include a home theater, wine cellar, gym, and infinity pool with a cascading waterfall."
     },
     {
         "id": 4,
@@ -29,7 +33,8 @@
         "title": "Charming Cottage in the Countryside",
         "description": "Escape the hustle and bustle with this cozy cottage surrounded by nature.",
         "price": 1200,
-        "location": "Rural Area, City D"
+        "location": "Rural Area, City D",
+        "big" : "Embrace eco-friendly living in this stunning desert oasis, designed to harmonize with the natural environment. Built using sustainable materials and innovative technologies, the home prioritizes energy efficiency and environmental responsibility. The open-concept living area features earth-toned finishes, polished concrete floors, and expansive windows that capture views of the desert landscape. The gourmet kitchen is equipped with energy-efficient appliances, recycled glass countertops, and a large island for casual dining. Outside, the landscaped gardens incorporate native vegetation and drought-resistant plants, creating a serene retreat for relaxation and contemplation. Solar panels and rainwater harvesting systems further reduce the home's ecological footprint."
       },
       {
         "id": 5,
@@ -37,7 +42,8 @@
         "title": "Modern Townhouse with Rooftop Terrace",
         "description": "Enjoy urban living with this stylish townhouse featuring a rooftop terrace and city views.",
         "price": 2800,
-        "location": "Downtown, City E"
+        "location": "Downtown, City E",
+        "big" : "Step into the future with this state-of-the-art smart home, where technology seamlessly integrates with modern living. Equipped with the latest smart home automation systems, the residence offers ultimate convenience, comfort, and security. Control lighting, temperature, security cameras, and entertainment systems with the touch of a button or voice command. The open-plan living space features sleek finishes, smart appliances, and hidden storage solutions for a clutter-free environment. The home theater boasts immersive audiovisual technology, perfect for movie nights or gaming sessions. Outdoors, the landscaped backyard includes a heated pool, outdoor kitchen, and integrated speakers, creating an ideal space for outdoor entertaining and relaxation."
       },
       {
         "id": 6,
@@ -45,7 +51,9 @@
         "title": "Elegant Penthouse in Exclusive Building",
         "description": "Live in luxury with this elegant penthouse offering spacious interiors and top-notch amenities.",
         "price": 5000,
-        "location": "High-Rise, City F"
+        "location": "High-Rise, City F",
+        "big" : "Escape the hustle and bustle of city life in this urban retreat, featuring a private rooftop garden oasis. Nestled in a vibrant neighborhood, this contemporary home offers a peaceful sanctuary amidst the urban landscape. The main living area is flooded with natural light, thanks to expansive windows that frame views of the surrounding skyline. The open-concept layout seamlessly connects the living, dining, and kitchen areas, creating an inviting space for entertaining and relaxation. The gourmet kitchen is equipped with sleek appliances, quartz countertops, and ample storage space. Upstairs, the master suite boasts a spa-like ensuite bathroom, walk-in closet, and access to a private balcony overlooking the lush rooftop garden. The rooftop oasis is a haven for greenery enthusiasts, featuring landscaped gardens, a pergola-covered seating area, and panoramic views of the city skyline. Enjoy al fresco dining, morning yoga sessions, or simply unwind in this tranquil urban retreat."
+
       }
   ]
   

@@ -26,7 +26,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <img src={logo} className="w-10 h-10" alt="" />
+                <img src={logo} className="w-10 h-10 mr-3" alt="" />
                 <a className=" text-xl font-semibold">Alps Home</a>
             </div>
             <div className="navbar-center hidden mr-64 lg:flex">

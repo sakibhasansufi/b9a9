@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext, useState} from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/Provider";
 import { Helmet } from "react-helmet-async";
+import { FaRegEye } from "react-icons/fa6";
+import { FaRegEyeSlash } from "react-icons/fa6";
 
 
 const Signup = () => {
@@ -11,10 +13,11 @@ const Signup = () => {
     const location = useLocation();
     console.log('location is here', location);
     const navigate = useNavigate();
+    const [thisPassword,setThisPassword] = useState(false);
 
 
 
-    const [logInError,setLogInError] = useState('');
+    const [logInError, setLogInError] = useState('');
 
     const {
         createUser,
@@ -42,17 +45,17 @@ const Signup = () => {
             })
     }
 
-// create user and update profile
+    // create user and update profile
 
     const onSubmit = (data) => {
         console.log(data)
         const { email, password, name, image } = data;
-        if(password<6){
+        if (password.length < 6) {
             setLogInError('Password should be at least 6 characters');
             return;
         }
         else if (!/[A-Z]/.test(password)) {
-            setLogInError('please provide uppercase');
+            setLogInError('Password should be at least an uppercase.');
             return;
         }
         createUser(email, password)
@@ -98,13 +101,29 @@ const Signup = () => {
                     <input type="email" name="email" placeholder="Email" className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  " {...register("email", { required: true })} />
                     {errors.email && <span className="text-red-600">This field is required</span>}
                 </div>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2  items-center text-sm">
                     <label htmlFor="password" className="block ">
                         Password
                     </label>
-                    <input type="password" name="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  "
+                    <div className="flex items-center">
+                        <input 
+                        type={thisPassword ? "text" : "password"}
+                        name="password"
+                        placeholder="Password"
+                        className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  "
                         {...register("password", { required: true })} />
-                    {errors.password && <span className="text-red-600">This field is required</span>}
+                        {errors.password && <span className="text-red-600">This field is required</span>}
+                        <span onClick={()=> setThisPassword(!thisPassword)} className="-ml-5">
+                            {
+                                thisPassword ?  <FaRegEyeSlash></FaRegEyeSlash>: <FaRegEye></FaRegEye>
+                            }
+                            </span>
+
+                    </div>
+
+
+
+
 
                 </div>
                 {/* Sign in Button */}
@@ -142,7 +161,7 @@ const Signup = () => {
                     Log in
                 </Link>
             </p>
-            
+
         </div>
     );
 };

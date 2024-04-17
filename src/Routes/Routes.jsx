@@ -20,11 +20,12 @@ const routes= createBrowserRouter([
             {
                 path : '/',
                 element : <Home></Home>,
-                loader : () => fetch('/public/houseData.json')
+                loader : () => fetch('/houseData.json')
             },
             {
                 path : '/housedata/:id',
-                element : <PrivateRoute><HouseDetails></HouseDetails></PrivateRoute>
+                element : <PrivateRoute><HouseDetails></HouseDetails></PrivateRoute>,
+                loader : () => fetch('/houseData.json')
             },
             {
                 path : '/login',
@@ -37,7 +38,7 @@ const routes= createBrowserRouter([
             {
                 path : '/career',
                 element : <Career></Career>,
-                loader : () => fetch('/public/jobs.json')
+                loader : () => fetch('/jobs.json')
             },
             {
                 path : '/events',
