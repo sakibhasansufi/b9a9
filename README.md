@@ -8,6 +8,11 @@ Welcome to our real estate website. This website is built on React Js.
 5. Contact us page has a map of our location .Also in this page people can send us message.
 6. People can sign up via email or google and github log in.
 
+Package Use :
+1. React Hook form
+2. React Leaflet
+
+
 
 
 Live Website link : https://real-estate-1cb13.web.app/
