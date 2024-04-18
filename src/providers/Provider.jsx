@@ -34,16 +34,7 @@ const Provider = ({ children }) => {
     // google log in 
     const googleLogIn = () => {
         setLoading(true);
-        return signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const loggedinuser = result.user;
-                console.log(loggedinuser);
-                setUser(loggedinuser)
-            })
-            .catch(error => {
-                console.error(error.message)
-
-            })
+        return signInWithPopup(auth, googleProvider);
     }
 
 
@@ -60,15 +51,8 @@ const Provider = ({ children }) => {
     const githubLogIn = () => {
         setLoading(true);
         return signInWithPopup(auth, githubProvider)
-            .then(result => {
-                const loggedinuser = result.user;
-                console.log(loggedinuser);
-                setUser(loggedinuser)
-            })
-            .catch(error => {
-                console.error(error.message)
-
-            })
+           
+            
 
     }
 
