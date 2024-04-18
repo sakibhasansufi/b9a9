@@ -12,7 +12,7 @@ const HouseDetails = () => {
     return (
         <section className="flex min-h-[700px]  w-full items-center justify-center bg-white px-8">
             <Helmet>
-                <title>Alps Home | House Details</title>
+                <title>Alps Home |{id}</title>
             </Helmet>
             <div className="flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
                 <div className="max-w-md md:space-y-6 sm:space-y-5 space-y-4">

@@ -6,7 +6,7 @@ import { AuthContext } from "../providers/Provider";
 
 const Navbar = () => {
 
-    const { logout,user } = useContext(AuthContext);
+    const { logout, user } = useContext(AuthContext);
 
     return (
 
@@ -26,8 +26,14 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <img src={logo} className="w-10 h-10 mr-3" alt="" />
-                <a className=" text-xl font-semibold">Alps Home</a>
+                <div className="cursor-pointer">
+                    <Link to='/' className="flex items-center">
+                        <img src={logo} className="w-10 h-10 mr-3" alt="" />
+                        <a className=" text-xl font-semibold">Alps Home</a>
+                    </Link>
+
+                </div>
+
             </div>
             <div className="navbar-center hidden mr-64 lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -45,26 +51,26 @@ const Navbar = () => {
 
                 </div>
 
-               
+
                 {user ?
                     <div className="dropdown dropdown-end ml-20  md:ml-72 lg:ml-0 ">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src={user?.photoURL || "https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg"}  />
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img src={user?.photoURL || "https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg"} />
+                            </div>
                         </div>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a className="justify-between">
+                                    {user?.displayName || "user not found"}
+                                </a>
+                            </li>
+                            {/* <li><a>Settings</a></li> */}
+                            <li><a onClick={logout}>Logout</a></li>
+                        </ul>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a className="justify-between">
-                                {user?.displayName || "user not found"}
-                            </a>
-                        </li>
-                        {/* <li><a>Settings</a></li> */}
-                        <li><a onClick={logout}>Logout</a></li>
-                    </ul>
-                </div>
-                :
-                <Link to='/login' className="rounded-lg bg-green-500 px-6 py-2 text-[12px] font-semibold text-white duration-300 dark:hover:bg-green-950 sm:text-sm md:text-base ">Login</Link>
+                    :
+                    <Link to='/login' className="rounded-lg bg-green-500 px-6 py-2 ml-28 md:ml-56 lg:ml-0 text-[12px] font-semibold text-white duration-300 dark:hover:bg-green-950 sm:text-sm md:text-base ">Login</Link>
                 }
             </div>
 

@@ -55,6 +55,10 @@ const Signup = () => {
             setLogInError('Password should be at least an uppercase.');
             return;
         }
+        else if (!/[a-z]/.test(password)) {
+            setLogInError('Password should be at least an lowercase.');
+            return;
+        }
 
         else if (!/[0-9]/.text(password)) {
             setLogInError("Password should at least have a number");

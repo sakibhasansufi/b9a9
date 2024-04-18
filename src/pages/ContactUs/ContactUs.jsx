@@ -2,6 +2,8 @@ import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 import "./style.css"
 import { Helmet } from 'react-helmet-async';
+import { Icon } from 'leaflet';
+import { FaMapMarkerAlt } from "react-icons/fa";
 const ContactUs = () => {
     const markers = [
         {
@@ -12,6 +14,12 @@ const ContactUs = () => {
 
     ];
 
+
+    const customeIcon = new Icon({
+        iconUrl : <FaMapMarkerAlt />,
+        iconSize : [38,38]
+    })
+
     return (
         <div className='md:max-w-7xl md:mx-auto'>
             <Helmet>
@@ -19,13 +27,13 @@ const ContactUs = () => {
             </Helmet>
             <h2 className='text-center text-3xl font-bold mt-5 font-mulish'>Our Location and Contact Information</h2>
             <div className=' md:flex justify-center  md:gap-10 lg:gap-20  md:ml-16 mt-8 mb-8 '>
-                <MapContainer center={[40.7125771, -74.0054386]} zoom={13} scrollWheelZoom={true}>
+                <MapContainer center={[40.7125771, -74.0054386]} zoom={13} scrollWheelZoom={false}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     {
-                        markers.map(marker => <Marker key={marker.id} position={marker.geocode}>
+                        markers.map(marker => <Marker icon={customeIcon} key={marker.id} position={marker.geocode} >
                             <Popup><h2>I am here</h2></Popup>
                         </Marker>)
                     }
