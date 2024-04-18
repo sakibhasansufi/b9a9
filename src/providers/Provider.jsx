@@ -15,16 +15,12 @@ const Provider = ({ children }) => {
     const createUser = (email, password) => {
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
-        
-
     }
 
-
-
     //update user
-    const updateUserProfile = (name,image) => {
-       return updateProfile(auth.currentUser, {
-            displayName: name, 
+    const updateUserProfile = (name, image) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name,
             photoURL: image
         })
     }
@@ -103,7 +99,7 @@ const Provider = ({ children }) => {
         updateUserProfile,
         loading,
         user,
-        
+
 
     }
     return (
